@@ -45,7 +45,7 @@ app.get('/api/songs', async (req, res) => {
             return {
                 id: index + 1,
                 title: path.parse(file).name, 
-                src: `https://fog-assessment-cuvette-ap.onrender.com/songs/${file}`,
+                src: `https://fog-backend.onrender.com/songs/${file}`,
                 duration: duration,
                 plays: "643.786.045",
                 album: 'Thriller 25 Sup...', 

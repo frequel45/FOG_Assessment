@@ -96,7 +96,7 @@ const MusicPlay = () => {
 
   const intervalRef = useRef()
   useEffect(() => {
-    fetch("https://fog-assessment-cuvette-ap.onrender.com/api/songs")
+    fetch("https://fog-backend.onrender.com/api/songs")
       .then((response) => response.json())
       .then((data) => setSongs(data))
       .catch((error) => console.error("Error fetching songs:", error));
@@ -369,28 +369,7 @@ function secondsToHMSs(durationInSeconds) {
                       ? "white"
                       : "rgba(246, 246, 246, 1)",
                   height: 4,
-                  // "& .MuiSlider-thumb": {
-                  //   width: 8,
-                  //   height: 8,
-                  //   // transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
-                  //   "&::before": {
-                  //     boxShadow: "0 2px 12px 0 rgba(246, 246, 246, 1)",
-                  //   },
-                  //   "&:hover, &.Mui-focusVisible": {
-                  //     boxShadow: `0px 0px 0px 8px ${
-                  //       theme.palette.mode === "dark"
-                  //         ? "rgb(246, 246, 246, 1 / 16%)"
-                  //         : "rgb(0 0 0 / 16%)"
-                  //     }`,
-                  //   },
-                  //   "&.Mui-active": {
-                  //     width: 20,
-                  //     height: 20,
-                  //   },
-                  // },
-                  // "& .MuiSlider-rail": {
-                  //   opacity: 0.28,
-                  // },
+                 
                 }}
               />
             </div>
