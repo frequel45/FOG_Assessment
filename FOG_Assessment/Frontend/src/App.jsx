@@ -6,7 +6,6 @@ import LoginRegister from './componets/LoginRegister.jsx';
 function App() {
   return (
     <>
-      
       <Sidebar/>
       <MusicPlay/>
     </>
